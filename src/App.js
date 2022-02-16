@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { InputCep } from "./components/InputCep";
-import { Card } from "./components/Card";
+import { InputCep } from "./components/InputCep/InputCep.js";
+import { Card } from "./components/Card/Card.js";
 
 import "./styles.css";
 
