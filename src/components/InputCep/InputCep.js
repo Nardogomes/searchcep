@@ -1,10 +1,12 @@
 import { MdSearch } from "react-icons/md";
 import { api } from "../../services/api";
 
+import { Container } from "./styles";
+
 export function InputCep(props) {
   async function handleSearch() {
     if (props.data === "") {
-      alert("Deve informar um cep para pesquisar.");
+      return alert("Deve informar um cep para pesquisar.");
     }
 
     try {
@@ -19,7 +21,7 @@ export function InputCep(props) {
   }
 
   return (
-    <div className="containerInput">
+    <Container className="containerInput">
       <input
         type="text"
         placeholder="Digite o cep..."
@@ -33,6 +35,6 @@ export function InputCep(props) {
       >
         <MdSearch size={25} color="#fff" />
       </button>
-    </div>
+    </Container>
   );
 }
