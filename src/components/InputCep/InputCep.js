@@ -1,5 +1,5 @@
 import { MdSearch } from "react-icons/md";
-import { api } from "../services/api";
+import { api } from "../../services/api";
 
 export function InputCep(props) {
   async function handleSearch() {
