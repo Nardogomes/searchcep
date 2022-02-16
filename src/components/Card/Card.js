@@ -1,6 +1,8 @@
+import { Main } from "./styles.js";
+
 export function Card(props) {
   return (
-    <main className="main">
+    <Main className="main">
       <h2>CEP: {props.address.cep}</h2>
 
       <span>Rua: {props.address.logradouro}</span>
@@ -9,6 +11,6 @@ export function Card(props) {
       <span>
         {props.address.localidade} - {props.address.uf}
       </span>
-    </main>
+    </Main>
   );
 }
